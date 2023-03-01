@@ -203,7 +203,7 @@ p {
         padding-left: 0%;
     }
     .card-title {
-        @include cards-titles($font-h3-size, 90px);
+        @include cards-titles(1.4em, 90px);
     }
     .card-duration {
         @extend .card-duration;
