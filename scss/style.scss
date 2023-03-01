@@ -193,9 +193,14 @@ p {
 
 /*atributos a la sección cursos*/
 .cursos {
-    max-width: 100%;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-rows: auto auto;
+    }
     .col {
         padding-right: 0%;
+        padding-left: 0%;
     }
     .card-title {
         @include cards-titles($font-h3-size, 90px);
@@ -210,7 +215,8 @@ p {
 .card {
     background-color: $white-ct;
     box-shadow: 0px 2px 8px 2px gray;
-    width: $width-card;
+    margin: 10px;
+    // width: $width-card;
     &:hover {
         box-shadow: map-get($map: $hovers, $key: sombras);
         transition: map-get($map: $hovers, $key: transicion);
@@ -229,7 +235,7 @@ p {
         }
     }
     .card-text {
-        font-size: 0.97em;
+        font-size: 0.94em;
     }
 }
 /*fin atributos en general a las cards de servicios y capacitaciones*/
@@ -382,12 +388,6 @@ p {
         }
     }
 
-    /*cards*/
-    .card {
-        width: $width-card-xl;
-    }
-    /*fin de sección about-me*/
-
     /*atributos section contact*/
     .contact {
         .formulario .form-control {
@@ -505,10 +505,6 @@ p {
     }
     /*fin sección de about-me*/
 
-    /*tarjetitas en general de servicios y cursos*/
-    .card {
-        width: $width-card-lg;
-    }
 
     /*section de contact*/
     .contact {
@@ -528,7 +524,7 @@ p {
 }
 
 /*adaptando medidas a extra small*/
-@media only screen and (min-width: 265px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
     h1 {
         font-size: $font-h1-size-sm;
     }
@@ -562,11 +558,6 @@ p {
     }
     /*fin de sección de about-me*/
 
-    /*cards*/
-    .card {
-        width: $width-card-sm;
-    }
-
     /*atributos a contact*/
     .contact {
         .formulario {
@@ -580,7 +571,7 @@ p {
     /*titulos de las cards en cursos*/
     .cursos {
         .card-title {
-            @include cards-titles(1.2em, 80px);
+            @include cards-titles(1.5em, 80px);
         }
     }
 
