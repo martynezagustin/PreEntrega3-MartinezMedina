@@ -194,7 +194,8 @@ p {
 /*atributos a la sección cursos*/
 .cursos {
     .cursos__h2{
-        background-color: $white-ct;
+        background-color: $negro;
+        color: $white-ct;
         border-radius: 5px;
     }
     hr{
