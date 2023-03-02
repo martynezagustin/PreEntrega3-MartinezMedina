@@ -3,13 +3,13 @@
 /*archivo sobre fuentes y propiedades*/
 /*estilos en general para h1 desktop, luego usados como extensión*/
 .h1-styles-desktop, h1 {
-  font-size: 4.4em;
+  font-size: 4.5em;
   font-weight: 900;
 }
 
 /*estilos en general para h2 desktop, luego usado como extensión*/
 .h2-styles-desktop, h2 {
-  font-size: 2.9em;
+  font-size: 2.7em;
   text-align: center;
   color: rgb(40, 40, 40);
   font-weight: 800;
@@ -241,10 +241,13 @@ body {
 
 /*fin atributos a ubicacion*/
 /*atributos a la sección cursos*/
+.cursos hr {
+  opacity: 1;
+}
 .cursos .row {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-rows: auto auto;
+  grid-template-rows: auto;
 }
 .cursos .col {
   padding-right: 0%;
@@ -285,8 +288,13 @@ body {
 .servicios {
   max-width: 100%;
 }
+.servicios .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
 .servicios .col {
   padding-right: 0%;
+  padding-left: 0%;
 }
 .servicios .card-title {
   font-size: 1.5em;
@@ -374,7 +382,7 @@ body {
     font-size: 4em;
   }
   h2 {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
   h3 {
     font-size: 1.4em;
@@ -435,7 +443,7 @@ body {
     font-size: 3.2em;
   }
   h2 {
-    font-size: 2.2em;
+    font-size: 2em;
   }
   h3 {
     font-size: 1.2em;
@@ -531,7 +539,7 @@ body {
     font-size: 2.3em;
   }
   h2 {
-    font-size: 1.38em;
+    font-size: 1.3em;
   }
   h3 {
     font-size: 1em;
