@@ -193,10 +193,13 @@ p {
 
 /*atributos a la sección cursos*/
 .cursos {
+    hr{
+        opacity: 1;
+    }
     .row{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        grid-template-rows: auto auto;
+        grid-template-rows: auto;
     }
     .col {
         padding-right: 0%;
@@ -243,8 +246,13 @@ p {
 /*atributos en general a la sección de servicios*/
 .servicios {
     max-width: 100%;
+    .row{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
     .col {
         padding-right: 0%;
+        padding-left: 0%;
     }
     .card-title {
         @include cards-titles(1.5em, 110px);
