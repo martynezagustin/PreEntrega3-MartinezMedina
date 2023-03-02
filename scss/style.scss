@@ -193,6 +193,10 @@ p {
 
 /*atributos a la sección cursos*/
 .cursos {
+    .cursos__h2{
+        background-color: $white-ct;
+        border-radius: 5px;
+    }
     hr{
         opacity: 1;
     }
