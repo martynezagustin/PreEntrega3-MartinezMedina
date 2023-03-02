@@ -241,6 +241,10 @@ body {
 
 /*fin atributos a ubicacion*/
 /*atributos a la sección cursos*/
+.cursos .cursos__h2 {
+  background-color: rgb(239, 236, 230);
+  border-radius: 5px;
+}
 .cursos hr {
   opacity: 1;
 }
