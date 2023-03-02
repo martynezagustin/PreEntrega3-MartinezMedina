@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Indaga en nuestros cursos sobre nuevas tecnologías: Marketing digital, programación de sitios web, habilidades de startups, entre otras.">
-    <meta name="keywords" content="Javascript, css, programación web, mercadotecnia, marketing, marketing de empresas, marketing digital, cursos, cursos IA, cursos en tecnologías, nuevas tecnologías, startups, empresas emergentes, cursos startups">
+    <meta name="keywords"
+        content="Javascript, css, HTML, programación web, mercadotecnia, marketing, marketing de empresas, marketing digital, cursos, cursos IA, cursos en tecnologías, nuevas tecnologías, startups, empresas emergentes, cursos startups, chat GPT, GPT, curso chat GPT, e-commerce, negocios IA">
     <title>Cursos - ConsulTeccnia</title>
 
     <!-- invocar fuentes -->
@@ -28,6 +29,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- fin invocar CSS -->
     <link rel="shortcut icon" href="../assets/imgs/favicon.png" type="image/x-icon">
+
+    <!-- link animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="body body-courses">
@@ -69,14 +74,17 @@
     <!-- inicio del main -->
     <main class="main">
         <!-- seccion de cursos -->
-        <section class="cursos m-2" data-aos="fade-right">
-            <h1 class="cursos__h1 p-3">NUESTROS CURSOS</h1>
+        <section class="cursos m-2">
+            <h1 class="cursos__h1 p-3 text-center">NUESTROS CURSOS</h1>
+
+            <hr>
 
             <!-- container fluid de 100% width para cursos -->
             <div class="container-fluid">
 
+                <h2 class="cursos__h2 mt-4">CURSOS SOBRE PROGRAMACIÓN</h2>
                 <!-- inicio de la fila -->
-                <div class="row gy-5">
+                <div class="row" data-aos="fade-up">
 
                     <!-- curso de desarrollo web -->
                     <div class="col">
@@ -94,6 +102,21 @@
                     </div>
                     <!-- fin curso de desarrollo web -->
 
+                    <!-- curso de SASS -->
+                    <div class="col">
+                        <div class="card ancho-card">
+                            <img src="../assets/imgs/courses/curso-sass.png" class="card-img-top"
+                                alt="curso-sass">
+                            <div class="card-body">
+                                <h5 class="card-title">CURSO DE SASS</h5>
+                                <p class="card-duration"><b>Duración: <i>55 horas</i></b></p>
+                                <p class="card-text"><b>SASS</b> es un preprocesador del lenguaje <b>CSS</b>, muy potente para tu sitio web.</b> Aprende con este curso.</p>
+                                <a href="#" class="btn btn btn-secondary">IR AL CURSO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin curso de SASS -->
+
                     <!-- curso básico de Javascript -->
                     <div class="col">
                         <div class="card ancho-card">
@@ -103,7 +126,7 @@
                                 <h5 class="card-title">CURSO BÁSICO DE JAVASCRIPT</h5>
                                 <p class="card-duration"><b>Duración: <i>80 horas</i></b></p>
                                 <p class="card-text">Aprende los conceptos del lenguaje lógico de los navegadores,
-                                    <b>Javascript. </b><i>funciones, clase, arrays</i> y más.
+                                    <b>Javascript. </b><i>funciones, clases, arrays</i>.
                                 </p>
                                 <a href="#" class="btn btn btn-secondary">IR AL CURSO</a>
                             </div>
@@ -111,22 +134,31 @@
                     </div>
                     <!--fin curso básico de Javascript -->
 
-                    <!-- curso de marketing digital -->
+                    <!-- curso introductorio de CSS -->
                     <div class="col">
                         <div class="card ancho-card">
-                            <img src="../assets/imgs/courses/curso-marketing-digital.png" class="card-img-top"
-                                alt="curso-mk-digital">
+                            <img src="../assets/imgs/courses/curso-css.png" class="card-img-top"
+                                alt="curso-css">
                             <div class="card-body">
-                                <h5 class="card-title">CURSO DE MARKETING DIGITAL</h5>
-                                <p class="card-duration"><b>Duración: <i>60 horas</i></b></p>
-                                <p class="card-text">Ábrete camino en el magnífico mundo del <b>marketing digital</b> y
-                                    los negocios digitales con esta capacitación.</p>
+                                <h5 class="card-title">CURSO INTRODUCTORIO DE CSS</h5>
+                                <p class="card-duration"><b>Duración: <i>78 horas</i></b></p>
+                                <p class="card-text">Descubre de forma introductoria, en este curso, como crearle <b>estilos a tu sitio web, con <i>CSS</i></b>.
+                                </p>
                                 <a href="#" class="btn btn btn-secondary">IR AL CURSO</a>
                             </div>
                         </div>
                     </div>
-                    <!-- fin curso de marketing digital -->
+                    <!--fin curso introductorio de CSS -->
 
+                </div>
+                <!-- fin de la fila 1-->
+
+                <hr>
+
+                <h2 class="cursos__h2 mt-4" data-aos="fade-right">CURSOS SOBRE MANAGEMENT Y EMPRESAS</h2>
+
+                <!-- inicio fila 2 -->
+                <div class="row" data-aos="fade-up">
 
                     <!-- curso de introducción al marketing -->
                     <div class="col">
@@ -148,11 +180,12 @@
                     <div class="col">
                         <div class="card ancho-card">
                             <img src="../assets/imgs/courses/curso-startups.jpg" class="card-img-top"
-                                alt="curso-javascript">
+                                alt="curso-startups">
                             <div class="card-body">
                                 <h5 class="card-title">CURSO SOBRE METODOLOGÍA DE STARTUPS</h5>
                                 <p class="card-duration"><b>Duración: <i>67 horas</i></b></p>
-                                <p class="card-text">Comienza a aprender sobre Startups, el nuevo <b>paradigma del management empresarial.</b> MVP y más.
+                                <p class="card-text">Comienza a aprender sobre Startups, el nuevo <b>paradigma del
+                                        management empresarial.</b> MVP y más.
                                 </p>
                                 <a href="#" class="btn btn btn-secondary">IR AL CURSO</a>
                             </div>
@@ -164,11 +197,13 @@
                     <div class="col">
                         <div class="card ancho-card">
                             <img src="../assets/imgs/courses/curso-chat-gpt.jpg" class="card-img-top"
-                                alt="curso-javascript">
+                                alt="curso-ia-y-chat-gpt">
                             <div class="card-body">
                                 <h5 class="card-title">CURSO SOBRE IA Y CHAT GPT</h5>
                                 <p class="card-duration"><b>Duración: <i>75 horas</i></b></p>
-                                <p class="card-text">Incursiona en la nueva revolución de la IA, el <b>CHAT GPT</b>, creado para <i>soluciones inteligentes</i> y más.
+                                <p class="card-text">Incursiona en la nueva revolución de la IA, el <b>CHAT GPT</b>,
+                                    creado
+                                    para <i>soluciones inteligentes</i> y más.
                                 </p>
                                 <a href="#" class="btn btn btn-secondary">IR AL CURSO</a>
                             </div>
@@ -176,8 +211,24 @@
                     </div>
                     <!--fin curso de chat GPT -->
 
+                    <!-- curso de marketing digital -->
+                    <div class="col">
+                        <div class="card ancho-card">
+                            <img src="../assets/imgs/courses/curso-marketing-digital.png" class="card-img-top"
+                                alt="curso-mk-digital">
+                            <div class="card-body">
+                                <h5 class="card-title">CURSO DE MARKETING DIGITAL</h5>
+                                <p class="card-duration"><b>Duración: <i>60 horas</i></b></p>
+                                <p class="card-text">Ábrete camino en el magnífico mundo del <b>marketing digital</b> y
+                                    los negocios digitales con esta capacitación.</p>
+                                <a href="#" class="btn btn btn-secondary">IR AL CURSO</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin curso de marketing digital -->
+
                 </div>
-                <!-- fin de la fila -->
+                <!-- fin de fila 2 -->
 
             </div>
             <!-- fin del container fluid -->
@@ -223,6 +274,13 @@
         </div>
     </footer>
     <!-- fin footer -->
+
+    <!-- script de animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
