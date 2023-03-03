@@ -7,8 +7,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="¿Se te hace difícil explayarte en el mercado digital? ¡Te ayudamos! Descubre sobre mentoría en negocios digitales, programación y marketing digital.">
-    <meta name="keywords" content="marketing, marketing digital, frontend, programación, asesorías, asesoría mercadotecnia, asesoría e-commerce, shopify, woocommerce, wordpress, página wordpress, crear páginas, crear e-commerce, asesoramiento web, digital">
+    <meta name="keywords"
+        content="marketing, marketing digital, frontend, programación, asesorías, asesoría mercadotecnia, asesoría e-commerce, shopify, woocommerce, wordpress, página wordpress, crear páginas, crear e-commerce, asesoramiento web, digital">
     <title>Servicios - ConsulTeccnia</title>
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://martynezagustin.github.io/PreEntrega3-MartinezMedina/views/services.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Servicios - ConsulTeccnia">
+    <meta property="og:description"
+        content="¿Se te hace difícil explayarte en el mercado digital? ¡Te ayudamos! Descubre sobre mentoría en negocios digitales, programación y marketing digital.">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Servicios - ConsulTeccnia">
+    <meta name="twitter:description"
+        content="¿Se te hace difícil explayarte en el mercado digital? ¡Te ayudamos! Descubre sobre mentoría en negocios digitales, programación y marketing digital.">
+
     <!-- invocar fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +42,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <!-- fin invocar CSS -->
     <link rel="shortcut icon" href="../assets/imgs/favicon.png" type="image/x-icon">
+
+    <!-- link animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body class="body">
@@ -68,11 +87,11 @@
     <!-- inicio del main -->
     <main class="main">
         <!-- seccion de cursos -->
-        <section class="servicios m-2">
+        <section class="servicios m-2" data-aos="fade-right">
             <h1 class="servicios__h1 p-3 text-center">SERVICIOS</h1>
 
             <!-- container fluid que ocupa el 100% del width -->
-            <div class="container-fluid">
+            <div class="container-fluid d-flex flex-column align-items-center">
 
                 <!-- sistema de grids para servicios, como el utilizado en cursos -->
                 <div class="row gy-5">
@@ -84,7 +103,8 @@
                                 alt="asesoria-mercadotecnia-digital">
                             <div class="card-body">
                                 <h5 class="card-title">ASESORAMIENTO EN MERCADOTECNIA DIGITAL</h5>
-                                <p class="card-text">Asesoramiento en tácticas de venta en <b>RRSS, posicionamiento SEO y SEM,
+                                <p class="card-text">Asesoramiento en tácticas de venta en <b>RRSS, posicionamiento SEO
+                                        y SEM,
                                         E-mail marketing, 4 P'S.</b></p>
                                 <a href="#" class="btn btn-secondary">CONSULTAR</a>
                             </div>
@@ -98,7 +118,7 @@
                             <img src="../assets/imgs/services/asesoria-frontend.png" class="card-img-top"
                                 alt="asesoria-frontend">
                             <div class="card-body">
-                                <h5 class="card-title">ASESORAMIENTO EN PROGRAMACIÓN WEB - FRONTEND</h5>
+                                <h5 class="card-title">ASESORAMIENTO EN PROGRAMACIÓN FRONTEND</h5>
                                 <p class="card-text">Asesoramiento en código <b>HTML, CSS y JS.</b> Integración de
                                     estilos,
                                     lógicas y algoritmos a tu sitio web.</p>
@@ -128,11 +148,12 @@
                     <!-- asesoramiento en e-commerce -->
                     <div class="col">
                         <div class="card">
-                            <img src="../assets/imgs/services/aesoria-branding.jpg" class="card-img-top"
+                            <img src="../assets/imgs/services/asesoria-branding.jpg" class="card-img-top"
                                 alt="asesoria-branding">
                             <div class="card-body">
                                 <h5 class="card-title">ASESORAMIENTO EN BRANDING DE EMPRESA</h5>
-                                <p class="card-text">Asesoramiento en <b>imagen empresarial</b> y <b>branding</b>. <b>Gestión de marca, experiencia</b>, etc.
+                                <p class="card-text">Asesoramiento en <b>imagen empresarial</b> y <b>branding</b>.
+                                    <b>Gestión de marca, experiencia</b>, etc.
                                 </p>
                                 <a href="#" class="btn btn-secondary">CONSULTAR</a>
                             </div>
@@ -185,6 +206,14 @@
         </div>
     </footer>
     <!-- fin footer -->
+
+    <!-- script de animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 
 </html>
