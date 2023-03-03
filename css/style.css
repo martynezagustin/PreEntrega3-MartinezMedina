@@ -9,7 +9,7 @@
 
 /*estilos en general para h2 desktop, luego usado como extensión*/
 .h2-styles-desktop, h2 {
-  font-size: 2.7em;
+  font-size: 2.5em;
   text-align: center;
   color: rgb(40, 40, 40);
   font-weight: 800;
@@ -31,7 +31,7 @@
 }
 
 .p-styles-desktop, p {
-  font-size: 1.5em;
+  font-size: 1.44em;
 }
 
 /*archivo sobre colores*/
@@ -163,7 +163,7 @@ body {
 .beneficios-consulteccnia .beneficios-consulteccnia__caja {
   padding: 10px;
   color: rgb(20, 20, 20);
-  max-width: 27%;
+  max-width: 25%;
 }
 .beneficios-consulteccnia .beneficios-consulteccnia__caja:hover {
   box-shadow: 0px 0px 15px 3px rgb(134, 134, 134);
@@ -242,8 +242,10 @@ body {
 /*fin atributos a ubicacion*/
 /*atributos a la sección cursos*/
 .cursos .cursos__h2 {
-  background-color: rgb(239, 236, 230);
+  background-color: rgb(20, 20, 20);
+  color: rgb(239, 236, 230);
   border-radius: 5px;
+  box-shadow: 0px 0px 15px 2px lightslategray;
 }
 .cursos hr {
   opacity: 1;
